@@ -1,0 +1,261 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+@keyframes run {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+body .headerIndex {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3%;
+  align-items: center;
+  flex-direction: row;
+  background-color: #181818;
+  color: #DAD9D9;
+}
+body .headerIndex .textoHeader {
+  font-family: "Roboto", serif;
+  font-size: 1.5rem;
+}
+body .headerIndex .carrito {
+  position: relative;
+}
+body .headerIndex .carrito a {
+  text-decoration: none;
+  color: #DAD9D9;
+}
+body .headerIndex .carrito a .iconCarrito {
+  padding: 10px;
+}
+body .headerIndex .carrito a .iconCarrito i {
+  font-size: 2.5rem;
+}
+body .headerIndex .carrito a .contadorCarrito {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: -4px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+body .headerIndex .carrito a .contadorCarrito p {
+  color: black;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+@keyframes run {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+body {
+  /* 100vw NO TIENE EN CUENTA LA BARRA SCROLL */
+  /* ESTE CALCULO LE RESTA ESA DIFERENCIA */ /* CORTESIA STACK OVERFLOW*/
+  width: calc(100vw - (100vw - 100%));
+  font-family: "Roboto", serif !important;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #cfcfcf;
+}
+body .ocultar {
+  display: none !important;
+}
+body .modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .modal .contenidoModal {
+  width: 500px;
+  height: 200px;
+  background-color: #181818;
+  padding: 10px;
+}
+body .modal .contenidoModal .innerModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  height: 100%;
+  padding: 10px;
+}
+body .modal .contenidoModal .innerModal .titulo {
+  font-size: 1.5rem;
+}
+body .modal .contenidoModal .innerModal .contenido {
+  font-size: 1rem;
+}
+body .modal .contenidoModal .innerModal .botones {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+body .modal .contenidoModal .innerModal .botones button {
+  background-color: #181818;
+  border: 2px solid #cfcfcf;
+  padding: 5px 15px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+body .modal #modalCard {
+  position: absolute;
+  animation: linear;
+  animation-name: run;
+  animation-duration: 0.2s;
+}
+body .contenedor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .contenedor .contenedorBuscador {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .contenedor .contenedorBuscador .buscador {
+  width: 90%;
+  justify-content: space-evenly;
+  padding: 10px 0 10px 0;
+  background-color: #181818;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+}
+body .contenedor .contenedorBuscador .buscador .textoBuscador {
+  border-bottom: 2px solid #5b5959;
+  width: 95%;
+}
+body .contenedor .contenedorBuscador .buscador .textoBuscador .inputBuscador {
+  width: 100%;
+  border: 0;
+  color: white;
+  background-color: unset;
+}
+body .contenedor .contenedorBuscador .buscador .textoBuscador .inputBuscador:focus-visible {
+  outline: none;
+}
+body .contenedor .contenedorBuscador .buscador .buscadorIcon {
+  background-color: #181818;
+  border: none;
+  cursor: pointer;
+}
+body .contenedor .contenedorBuscador .buscador .buscadorIcon i {
+  font-size: 1.3rem;
+  color: white;
+}
+body .contenedor .contenedorTarjetas {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+body .contenedor .contenedorTarjetas .tarjeta {
+  width: 18%;
+  height: 500px;
+  border: 2px solid #181818;
+  border-radius: 5px;
+  box-shadow: -6px 3px 4px 0px rgba(0, 0, 0, 0.3);
+  background-color: #181818;
+  color: white;
+  margin-bottom: 25px;
+}
+body .contenedor .contenedorTarjetas .tarjeta .imagenTarjeta {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+body .contenedor .contenedorTarjetas .tarjeta .imagenTarjeta img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+body .contenedor .contenedorTarjetas .tarjeta .detallesTarjeta {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 3%;
+  line-height: 25px;
+}
+body .contenedor .contenedorTarjetas .tarjeta .detallesTarjeta .agregarCarrito {
+  border: 2px solid white;
+  background-color: #181818;
+  position: absolute;
+  color: white;
+  border-radius: 5px;
+  width: 50%;
+  padding: 3px 0;
+  margin-top: 5px;
+  bottom: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+body .contenedor .tituloVentas {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+body .contenedor .botonesVentas {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .contenedor .botonesVentas button {
+  background-color: #181818;
+  border: 2px solid white;
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  color: white;
+  margin: 0 50px;
+}/*# sourceMappingURL=style.css.map */

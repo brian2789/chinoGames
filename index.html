@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="icon" type="image/png" href="img/maletin.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d6f136d242.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="headerIndex">
+        <a href="./index.html"><img src="./assets/img/ChinoGameslogo 1.png" /></a>
+        <p class="textoHeader">Tus mejores juegos no están aca!</p>
+        <div class="carrito">
+          <a href="./ventas.html">
+            <div class="iconCarrito">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="contadorCarrito">
+              <p id="contadorCarrito">0</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="contenedor">
+      <div class="contenedorBuscador">
+        <div class="buscador">
+          <div class="textoBuscador">
+            <input
+              type="text"
+              id="textoBuscador"
+              class="inputBuscador"
+              name="textoBuscador"
+              placeholder="Buscar..."
+            />
+          </div>
+          <button class="buscadorIcon" onclick="buscarJuegos()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+      </div>
+      <div class="contenedorTarjetas" id="tarjetas">
+      </div>
+    </div>
+    <div class="modal ocultar" id="modal">
+      <div class="contenidoModal" id="modalCard">
+        <div class="innerModal">
+          <p class="titulo">Este juego se encuentra en el carrito</p>
+          <p class="contenido">¿Deseas agregar el juego al carrito de todas formas?</p>
+          <div class="botones">
+            <button onclick="modalCancelar()">Cancelar</button>
+            <button onclick="modalAceptar()">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/tarjetas.js"></script>
+  </body>
+</html>

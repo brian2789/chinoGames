@@ -1,0 +1,35 @@
+//VARIABLES
+$fondoClaro: #566981;
+$fondoOscuro: #34344e;
+$fondoTarjeta: #3e4560;
+$fondoContenedor: #3a415a;
+$colorBorde: #252537;
+$fuente: "Roboto", serif;
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+@mixin dFlex($justifyContent, $alignItems, $flexDirection) {
+  display: flex;
+  @if $justifyContent != "" {
+    justify-content: $justifyContent;
+  }
+  @if $alignItems != "" {
+    align-items: $alignItems;
+  }
+  @if $flexDirection != "" {
+    flex-direction: $flexDirection;
+  }
+}
+
+@keyframes run {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);    
+  }
+}
